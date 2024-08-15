@@ -10,16 +10,7 @@
 #     runs-on: windows-latest
 #     steps:
 #       - run: node --version
-
-name: Run UI Tests
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: push
 
 jobs:
   test:
