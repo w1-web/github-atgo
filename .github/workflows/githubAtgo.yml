@@ -1,21 +1,11 @@
-# on: push
-
-# jobs:
-#   job1:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - run: pwd
-#       - run: ls
-#   job2:
-#     runs-on: windows-latest
-#     steps:
-#       - run: node --version
 on: push
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Run tests in Docker container
         uses: docker://atgo/test:8.8.0
         with:
