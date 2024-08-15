@@ -1,6 +1,6 @@
 on: push
 
-jons:
+jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
