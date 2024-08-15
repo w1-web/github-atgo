@@ -1,12 +1,46 @@
-on: push
+# on: push
+
+# jobs:
+#   job1:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: pwd
+#       - run: ls
+#   job2:
+#     runs-on: windows-latest
+#     steps:
+#       - run: node --version
+
+name: Run UI Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  job1:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
-  job2:
-    runs-on: windows-latest
-    steps:
-      - run: node --version
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run tests in Docker container
+        uses: docker://atgo/test:8.8.0
+        with:
+          entrypoint: /bin/sh
+          args: |
+            -c "Xvfb :99 -ac -screen 0 1280x720x16 -nolisten tcp & \
+            export DISPLAY=:99 && \
+            cd /opt/atgo && \
+            sed -i 's/\r//' ATgoCUI.sh && \
+            ./ATgoCUI.sh --project=/atgo_sample --run=テスト1.scenario --doInspection=true --license=/license.txt --ignoreComparisonError=true"
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: atgo_sample-output
+          path: atgo_sample/output
