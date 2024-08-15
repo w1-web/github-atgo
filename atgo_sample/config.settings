@@ -1,0 +1,19 @@
+####################################
+# 実行環境設定ファイル
+####################################
+# コマンド実行の時間間隔
+wait=500
+
+####################################
+# Windowsブラウザの設定
+####################################
+# OSの種類（windows/macos）
+platform=linux
+# ブラウザの種類（ie/edge/edgenew/chrome/firefox/firefox esr）
+browser_type=chrome
+# ブラウザウィンドの高さ
+browser_height=720
+# ブラウザウィンドの横幅
+browser_width=1280
+# シナリオ再生終了後、ブラウザを自動的に閉じるか
+browser_autoclose=true

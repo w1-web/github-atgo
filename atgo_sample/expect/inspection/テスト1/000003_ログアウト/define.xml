@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <defineVersion>4.0</defineVersion>
+  <scenarioName>テスト1</scenarioName>
+  <scriptName>ログアウト</scriptName>
+  <subFolder></subFolder>
+  <compareMatchKey>ログアウト</compareMatchKey>
+  <script>
+    <command line="Evidence_BrowserScreen=ログアウト" lineNo="6" hasInspectionData="true">
+      <image path="data\1.png">
+        <range x="" y="" width="" height=""/>
+        <exclude x="550" y="385" width="200" height="40"/>
+      </image>
+    </command>
+    <command line="Click_ById=id_logout" lineNo="8"/>
+  </script>
+</root>

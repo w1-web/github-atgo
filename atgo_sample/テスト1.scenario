@@ -1,0 +1,10 @@
+####################################
+# scriptを呼び出すファイル
+####################################
+
+# ログインを実行
+RunScript=_PROJECT_ROOT_\script\ログイン.script
+# 試験申込みを実行
+RunScript=_PROJECT_ROOT_\script\試験申込み.script
+# ログアウトを実行
+RunScript=_PROJECT_ROOT_\script\ログアウト.script

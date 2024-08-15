@@ -1,0 +1,28 @@
+####################################
+# 動作を記録するファイル
+####################################
+
+# 姓名を入力
+Input_ById=id_firstName|六元素
+Input_ById=id_lastName|太郎
+# 申込み試験を選択
+Input_Select_ById_UseOptionValue=id_select_exam|python
+# 性別を選択
+Input_Radio_ByName_UseValue=gender|male
+# 受験日を選択
+Input_Select_ById_UseOptionValue=id_select_year|2020
+Input_Select_ById_UseOptionValue=id_select_month|10
+Input_Select_ById_UseOptionValue=id_select_day|5
+# 画面を下にスクロール
+Page_ScrollTo=0,198
+# 受験目的を選択
+Input_CheckBox_ById=id_reason1|true
+Input_CheckBox_ById=id_reason2|false
+Input_CheckBox_ById=id_reason3|true
+Input_CheckBox_ById=id_reason4|false
+# クーポン
+Input_ById=id_coupon|EX2020
+# 画像を取得し、EXCELに取り付け
+Evidence_BrowserFullScreen=申込み
+# 申込みボタンをクリック
+Click_ById=id_submit

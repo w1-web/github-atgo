@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <defineVersion>4.0</defineVersion>
+  <scenarioName>テスト1</scenarioName>
+  <scriptName>試験申込み</scriptName>
+  <subFolder></subFolder>
+  <compareMatchKey>試験申込み</compareMatchKey>
+  <script>
+    <command line="Input_ById=id_firstName|六元素" lineNo="6"/>
+    <command line="Input_ById=id_lastName|太郎" lineNo="7"/>
+    <command line="Input_Select_ById_UseOptionValue=id_select_exam|python" lineNo="9"/>
+    <command line="Input_Radio_ByName_UseValue=gender|male" lineNo="11"/>
+    <command line="Input_Select_ById_UseOptionValue=id_select_year|2020" lineNo="13"/>
+    <command line="Input_Select_ById_UseOptionValue=id_select_month|10" lineNo="14"/>
+    <command line="Input_Select_ById_UseOptionValue=id_select_day|5" lineNo="15"/>
+    <command line="Page_ScrollTo=0,198" lineNo="17"/>
+    <command line="Input_CheckBox_ById=id_reason1|true" lineNo="19"/>
+    <command line="Input_CheckBox_ById=id_reason2|false" lineNo="20"/>
+    <command line="Input_CheckBox_ById=id_reason3|true" lineNo="21"/>
+    <command line="Input_CheckBox_ById=id_reason4|false" lineNo="22"/>
+    <command line="Input_ById=id_coupon|EX2020" lineNo="24"/>
+    <command line="Evidence_BrowserFullScreen=申込み" lineNo="26" hasInspectionData="true">
+      <image path="data\1.png">
+        <range x="" y="" width="" height=""/>
+        <exclude x="" y="" width="" height=""/>
+      </image>
+      <image path="data\2.png">
+        <range x="" y="" width="" height=""/>
+        <exclude x="" y="" width="" height=""/>
+      </image>
+    </command>
+    <command line="Click_ById=id_submit" lineNo="28"/>
+  </script>
+</root>

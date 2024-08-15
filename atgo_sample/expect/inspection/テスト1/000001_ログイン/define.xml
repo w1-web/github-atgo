@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <defineVersion>4.0</defineVersion>
+  <scenarioName>テスト1</scenarioName>
+  <scriptName>ログイン</scriptName>
+  <subFolder></subFolder>
+  <compareMatchKey>ログイン</compareMatchKey>
+  <script>
+    <command line="OpenURL=https://atgo.rgsis.com/demo/exam/" lineNo="6"/>
+    <command line="Input_ById=id_email|test@test.com" lineNo="8"/>
+    <command line="Input_ById=inputPassword|test" lineNo="10"/>
+    <command line="Evidence_BrowserScreen=ログイン" lineNo="12" hasInspectionData="true">
+      <image path="data\1.png">
+        <range x="" y="" width="" height=""/>
+        <exclude x="" y="" width="" height=""/>
+      </image>
+    </command>
+    <command line="Click_ById=id_login" lineNo="14"/>
+  </script>
+</root>
