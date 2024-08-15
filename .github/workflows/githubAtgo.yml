@@ -16,9 +16,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Run tests in Docker container
         uses: docker://atgo/test:8.8.0
         with:
@@ -29,7 +26,6 @@ jobs:
             cd /opt/atgo && \
             sed -i 's/\r//' ATgoCUI.sh && \
             ./ATgoCUI.sh --project=/atgo_sample --run=テスト1.scenario --doInspection=true --license=/license.txt --ignoreComparisonError=true"
-
       - name: Upload Test Results
         uses: actions/upload-artifact@v3
         with:
