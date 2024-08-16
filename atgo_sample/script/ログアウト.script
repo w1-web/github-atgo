@@ -4,5 +4,5 @@
 
 # 画像を取得し、EXCELに取り付け
 Evidence_BrowserScreen=ログアウト
-# ログアウトボタンをクリック1
+# ログアウトボタンをクリック
 Click_ById=id_logout
