@@ -4,7 +4,7 @@
 
 # サンプルサイトにアクセス
 OpenURL=https://atgo.rgsis.com/demo/exam/
-# アカウントを入力
+# アカウントを入力11111111
 Input_ById=id_email|test@test.com
 # パスワードを入力
 Input_ById=inputPassword|test
