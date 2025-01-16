@@ -7,7 +7,7 @@ OpenURL=https://atgo.rgsis.com/demo/exam/
 # アカウントを入力
 Input_ById=id_email|test@test.com
 # パスワードを入力
-Input_ById=inputPassword|test1
+Input_ById=inputPassword|test
 # 画像を取得し、EXCELに取り付け
 Evidence_BrowserScreen=ログイン123
 # ログインボタンをクリック
